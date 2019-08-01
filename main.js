@@ -1,7 +1,7 @@
 // initialize the map
 var lat= 41.55;
 var lng= -72.65;
-var zoom= 9;
+var zoom= 10;
 
 var map = L.map('map', {
     zoomControl: false,
