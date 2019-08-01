@@ -29,24 +29,21 @@ function getColor(d){
     return color;
 }
 
-//load GeoJSON poly and display colors based on prob occ Kanno et al 2015
-$.getJSON("KannoHighProbCWSCatch.geojson",function(polyData){
+var polystyle = {
+    "color": "#045a8d",
+    "weight": 2,
+    "opacity": 0.65
+};
+
+$.getJSON("coldwatersites_us_drainage.geojson",function(polyData){
     console.log(polyData);
     L.geoJson(polyData,{
-        style: function(feature){
-            return {
-                fillColor: getColor(feature.properties.occProbDat),
-                weight: 0.1,
-                opacity: 1,
-                color: 'white',
-                fillOpacity: 0.9}
-        },
+        style:polystyle
     }).addTo(map);
 });
 
-
 // load GeoJSON from an external file and display circle markers
-$.getJSON("coldwaterstreams.geojson",function(data){
+$.getJSON("coldwatersites.geojson",function(data){
   var marker = L.geoJson(data, {
     pointToLayer: function(feature,latlng){
       var markerStyle = {
@@ -62,7 +59,7 @@ $.getJSON("coldwaterstreams.geojson",function(data){
     },
     onEachFeature: function (feature,marker) {
       marker.bindPopup('<b>Stream: </b>'+feature.properties.Station_Na+'</br>'+"<b>SID: </b>"+feature.properties.STA_SEQ+'</br>'+
-      "<b>Continous Temperature Year Count: </b>"+feature.properties.HOBOCnt+'</br>'+"<b>Fish Sample Year Count: </b>"+feature.properties.FISHCnt);
+      "<b>Continous Temperature Year Count: </b>"+feature.properties.TEMP+'</br>'+"<b>Fish Sample Year Count: </b>"+feature.properties.FISH);
     }
     }).addTo(map);
   });
@@ -75,12 +72,9 @@ var legend = L.control({position: 'topleft'});
 
       // Create Div Element and Populate it with HTML
       var div = L.DomUtil.create('div', 'legend');
-      div.innerHTML += '<h4>Available Data Indicating Cold Water Habitat</h4>';
-      div.innerHTML += '<i class="circle" style="background: #cccccc"></i><p> Fish and Temperature Cold Water Sites</p>';
-      div.innerHTML += '<h5>Occurrence Probability</h5>';
-      div.innerHTML += '<i style="background: #045a8d"></i><p>Data Available</p>';
-      div.innerHTML += '<i style="background: #3182bd"></i><p>Very High - >0.85 (Kanno et al. 2015) </p>';
-      div.innerHTML += '<i style="background: #6baed6"></i><p>High - 0.75 - 0.85 (Kanno et al. 2015)</p>';
+      div.innerHTML += '<h4>Cold Water Habitat - Available Data As Of 08-01-19</h4>';
+      div.innerHTML += '<i class="circle" style="background: #cccccc"></i><p> Fish and Temperature Sample Sites</p>';
+      div.innerHTML += '<i style="background: #045a8d"></i><p>Supporting Drainage Basin</p>';
 
       // Return the Legend div containing the HTML content
       return div;
