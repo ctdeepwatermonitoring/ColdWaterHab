@@ -1,38 +1,51 @@
 // initialize the map
 var lat= 41.55;
 var lng= -72.65;
-var zoom= 10;
+var zoom= 9;
+
+//Load a tile layer base map from USGS ESRI tile server https://viewer.nationalmap.gov/help/HowTo.htm
+var hydro = L.esri.tiledMapLayer({url: "https://basemap.nationalmap.gov/arcgis/rest/services/USGSHydroCached/MapServer"}),
+    topo = L.esri.tiledMapLayer({url: "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer"});
+
+var baseMaps = {
+    "Hydro": hydro,
+    "Topo": topo
+  };
+
+
+// load a tile layer base map from USGS wms_server
+// var wms_server = "http://basemap.nationalmap.gov/arcgis/services/USGSHydroCached/MapServer/WMSServer?";
+// var wms_options = { layers: "0", format: "image/png", attribution: "USGS"}
+//
+// var topographic = L.tileLayer.wms(wms_server, wms_options);
+//
+// topographic.addTo(map);
+
+// L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+//     maxZoom: 18,
+//     attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+// }).addTo(map);
 
 var map = L.map('map', {
     zoomControl: false,
-    attributionControl: false
+    attributionControl: false,
+    layers:[hydro]
 });
 
 map.setView([lat, lng], zoom);
 map.createPane('top');
 map.getPane('top').style.zIndex=650;
 
-// load a tile layer base map
-L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 18,
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+L.control.attribution({position: 'bottomleft'}).addTo(map);
+
+L.control.zoom({
+     position:'topright'
 }).addTo(map);
-
-L.control.attribution({position: 'topright'}).addTo(map);
-
-//Style for circle markers
-function getColor(d){
-    var color = '#FFEDAO';
-    if(d > 0.75){     color = '#6baed6'; }
-    if(d > 0.85){     color = '#3182bd';}
-    if(d > 0.999999){ color = '#045a8d';}
-    return color;
-}
 
 var polystyle = {
     "color": "#045a8d",
     "weight": 2,
-    "opacity": 0.65
+    "opacity": 0.8
 };
 
 $.getJSON("coldwatersites_us_drainage.geojson",function(polyData){
@@ -59,21 +72,22 @@ $.getJSON("coldwatersites.geojson",function(data){
     },
     onEachFeature: function (feature,marker) {
       marker.bindPopup('<b>Stream: </b>'+feature.properties.Station_Na+'</br>'+"<b>SID: </b>"+feature.properties.STA_SEQ+'</br>'+
-      "<b>Continous Temperature Year Count: </b>"+feature.properties.TEMP+'</br>'+"<b>Fish Sample Year Count: </b>"+feature.properties.FISH);
+      "<b>Continous Temperature Year Count: </b>"+feature.properties.TEMP+'</br>'+"<b>Fish Sample Year Count: </b>"+feature.properties.FISH+'</br>'+
+      '<a href="https://github.com/marybecker/ColdWaterHab" </a> Link to Data');
     }
     }).addTo(map);
   });
 
 //add legend
-var legend = L.control({position: 'topleft'});
+var legend = L.control({position: 'bottomright'});
 
     // Function that runs when legend is added to map
     legend.onAdd = function (map) {
 
       // Create Div Element and Populate it with HTML
       var div = L.DomUtil.create('div', 'legend');
-      div.innerHTML += '<h4>Cold Water Habitat - Available Data As Of 08-01-19</h4>';
-      div.innerHTML += '<i class="circle" style="background: #cccccc"></i><p> Fish and Temperature Sample Sites</p>';
+      div.innerHTML += '<h2>Cold Water Habitat - Available Data As Of 08-01-19</h2>';
+      div.innerHTML += '<i class="circle" style="background: #cccccc"></i><p> Cold Water Sites - Click for info on data</p>';
       div.innerHTML += '<i style="background: #045a8d"></i><p>Supporting Drainage Basin</p>';
 
       // Return the Legend div containing the HTML content
@@ -83,81 +97,4 @@ var legend = L.control({position: 'topleft'});
     // Add Legend to Map
     legend.addTo(map);
 
-    // custom zoom bar control that includes a Zoom Home function
-L.Control.zoomHome = L.Control.extend({
-    options: {
-        position: 'topright',
-        zoomInText: '+',
-        zoomInTitle: 'Zoom in',
-        zoomOutText: '-',
-        zoomOutTitle: 'Zoom out',
-        zoomHomeText: '<i class="fa fa-home" style="line-height:1.65;"></i>',
-        zoomHomeTitle: 'Zoom home'
-    },
-
-    onAdd: function (map) {
-        var controlName = 'gin-control-zoom',
-            container = L.DomUtil.create('div', controlName + ' leaflet-bar'),
-            options = this.options;
-
-        this._zoomInButton = this._createButton(options.zoomInText, options.zoomInTitle,
-        controlName + '-in', container, this._zoomIn);
-        this._zoomHomeButton = this._createButton(options.zoomHomeText, options.zoomHomeTitle,
-        controlName + '-home', container, this._zoomHome);
-        this._zoomOutButton = this._createButton(options.zoomOutText, options.zoomOutTitle,
-        controlName + '-out', container, this._zoomOut);
-
-        this._updateDisabled();
-        map.on('zoomend zoomlevelschange', this._updateDisabled, this);
-
-        return container;
-    },
-
-    onRemove: function (map) {
-        map.off('zoomend zoomlevelschange', this._updateDisabled, this);
-    },
-
-    _zoomIn: function (e) {
-        this._map.zoomIn(e.shiftKey ? 3 : 1);
-    },
-
-    _zoomOut: function (e) {
-        this._map.zoomOut(e.shiftKey ? 3 : 1);
-    },
-
-    _zoomHome: function (e) {
-        map.setView([lat, lng], zoom);
-    },
-
-    _createButton: function (html, title, className, container, fn) {
-        var link = L.DomUtil.create('a', className, container);
-        link.innerHTML = html;
-        link.href = '#';
-        link.title = title;
-
-        L.DomEvent.on(link, 'mousedown dblclick', L.DomEvent.stopPropagation)
-            .on(link, 'click', L.DomEvent.stop)
-            .on(link, 'click', fn, this)
-            .on(link, 'click', this._refocusOnMap, this);
-
-        return link;
-    },
-
-    _updateDisabled: function () {
-        var map = this._map,
-            className = 'leaflet-disabled';
-
-        L.DomUtil.removeClass(this._zoomInButton, className);
-        L.DomUtil.removeClass(this._zoomOutButton, className);
-
-        if (map._zoom === map.getMinZoom()) {
-            L.DomUtil.addClass(this._zoomOutButton, className);
-        }
-        if (map._zoom === map.getMaxZoom()) {
-            L.DomUtil.addClass(this._zoomInButton, className);
-        }
-    }
-});
-// add the new control to the map
-var zoomHome = new L.Control.zoomHome();
-zoomHome.addTo(map);
+    L.control.layers(baseMaps).addTo(map);
