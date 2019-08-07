@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>CT Cold Water Streams</title>
-        <!-- Load css -->
-        <link rel="stylesheet" type="text/css" href="index.css"> <!-- loads our index.css-->
-      </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CT Cold Water Streams</title>
 
-      <body>
-        <div class="header">
-          <a href="#default" class="logo">CONNECTICUT COLD WATER HABITAT</a>
-          <div class="header-right">
-            <a class="active" href="index.html">map</a>
-            <a href="about.html">about</a>
-            <a href="#contact">contact</a>
-          </div>
-        </div>
+    <!-- Load leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
 
-        <div ><h1>TESTING</h1></div>
-        <div class="header">
-          <a href="http://www.ct.gov/deep"> <img id="deep" src="http://www.ct.gov/deep/lib/deep/gis/data/deeplogo.png">Connecticut Department of Energy and Environmental Protection</a>
-        </div>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js"
+            integrity="sha512-1tScwpjXwwnm6tTva0l0/ZgM3rYNbdyMj5q6RSQMbNX6EUMhYDE3pMRGZaT41zHEvLoWEK7qFEJmZDOoDMU7/Q=="
+            crossorigin=""></script>
 
-      </body>
+    <!-- Load jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Load css -->
+    <link rel="stylesheet" type="text/css" href="index.css"> <!-- loads our index.css-->
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+          <span id="cold_water_title_span" class="header_txt">
+              Cold Water Habitat
+          </span>
+    <span id="department_span" class="logo_txt">
+              CT Dept. of Energy and Environmental Protection
+          </span>
+    <span id="logo_span">
+              <a href="http://www.ct.gov/deep">
+                      <img id="deep" src="http://www.ct.gov/deep/lib/deep/gis/data/deeplogo.png">
+              </a>
+          </span>
+</div>
+
+<div class="topnav">
+    <a href="index.html">map</a>
+    <a href="about.html">about</a>
+</div>
+<!-- Begin map page content -->
+<div class="about">
+    <h2>About the project</h2>
+</div>
+</body>
 </html>

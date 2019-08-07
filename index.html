@@ -12,6 +12,7 @@
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
 
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <!-- Load Esri Leaflet from CDN -->
         <script src="https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js"
         integrity="sha512-1tScwpjXwwnm6tTva0l0/ZgM3rYNbdyMj5q6RSQMbNX6EUMhYDE3pMRGZaT41zHEvLoWEK7qFEJmZDOoDMU7/Q=="
@@ -27,19 +28,25 @@
     </head>
     <body>
       <div class="header">
-        <a href="#default" class="logo">CONNECTICUT COLD WATER HABITAT</a>
-        <div class="header-right">
-          <a class="active" href="index.html">map</a>
+          <span id="cold_water_title_span" class="header_txt">
+              Cold Water Habitat
+          </span>
+          <span id="department_span" class="logo_txt">
+              CT Dept. of Energy and Environmental Protection
+          </span>
+          <span id="logo_span">
+              <a href="http://www.ct.gov/deep">
+                      <img id="deep" src="http://www.ct.gov/deep/lib/deep/gis/data/deeplogo.png">
+              </a>
+          </span>
+      </div>
+
+      <div class="topnav">
+          <a href="index.html">map</a>
           <a href="about.html">about</a>
-          <a href="#contact">contact</a>
-        </div>
       </div>
         <!-- Begin map page content -->
       <div id="map"></div>
-      <div class="header">
-        <a href="http://www.ct.gov/deep"> <img id="deep" src="http://www.ct.gov/deep/lib/deep/gis/data/deeplogo.png">Connecticut Department of Energy and Environmental Protection</a>
-      </div>
       <script src="main.js"></script><!-- loads our main.js file-->
-      <script src="respnav.js"></script>
     </body>
 </html>

@@ -55,6 +55,11 @@ $.getJSON("coldwatersites_us_drainage.geojson",function(polyData){
     }).addTo(map);
 });
 
+var customOptions =
+    {
+        'maxWidth': '500',
+        'className' : 'custom'
+    };
 // load GeoJSON from an external file and display circle markers
 $.getJSON("coldwatersites.geojson",function(data){
   var marker = L.geoJson(data, {
@@ -71,23 +76,27 @@ $.getJSON("coldwatersites.geojson",function(data){
       return L.circleMarker(latlng, markerStyle);
     },
     onEachFeature: function (feature,marker) {
-      marker.bindPopup('<b>Stream: </b>'+feature.properties.Station_Na+'</br>'+"<b>SID: </b>"+feature.properties.STA_SEQ+'</br>'+
-      "<b>Continous Temperature Year Count: </b>"+feature.properties.TEMP+'</br>'+"<b>Fish Sample Year Count: </b>"+feature.properties.FISH+'</br>'+
-      '<a href="https://github.com/marybecker/ColdWaterHab" </a> Link to Data');
+      marker.bindPopup('<b>Stream: </b>'+
+          feature.properties.Station_Na+'</br>'
+          +"<b>SID: </b>"+feature.properties.STA_SEQ+'</br>'+
+      "<b>Continous Temperature Year Count: </b>"+feature.properties.TEMP
+          +'</br>'+ "<b>Fish Sample Year Count: </b>"
+          +feature.properties.FISH+'</br>'+
+      '<a href="https://github.com/marybecker/ColdWaterHab" </a> Link to Data',customOptions);
     }
     }).addTo(map);
   });
 
 //add legend
-var legend = L.control({position: 'bottomright'});
+var legend = L.control({position: 'topleft'});
 
     // Function that runs when legend is added to map
     legend.onAdd = function (map) {
 
       // Create Div Element and Populate it with HTML
       var div = L.DomUtil.create('div', 'legend');
-      div.innerHTML += '<h2>Cold Water Habitat - Available Data As Of 08-01-19</h2>';
-      div.innerHTML += '<i class="circle" style="background: #cccccc"></i><p> Cold Water Sites - Click for info on data</p>';
+      div.innerHTML += '<p class="title">Data As Of 08-01-19</p>';
+      div.innerHTML += '<i class="circle" style="background: #cccccc"></i><p> Cold Water Sites - Click for info</p>';
       div.innerHTML += '<i style="background: #045a8d"></i><p>Supporting Drainage Basin</p>';
 
       // Return the Legend div containing the HTML content
