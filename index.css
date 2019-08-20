@@ -84,7 +84,7 @@ body {
 #deep{
     float:right;
     width:2 vw;
-    height:auto;
+    max-width:3vw;
 }
 
 /* css to customize Leaflet default styles  */
@@ -123,9 +123,11 @@ body {
 
 .legend .circle {
     border-radius: 50%;
-    width: 14px;
-    height: 12px;
-    margin-top: 2px;
+    background: #cccccc;
+}
+
+.legend .poly {
+  background:#045a8d;
 }
 
 .legend .title{

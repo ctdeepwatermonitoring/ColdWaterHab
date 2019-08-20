@@ -96,8 +96,8 @@ var legend = L.control({position: 'topleft'});
       // Create Div Element and Populate it with HTML
       var div = L.DomUtil.create('div', 'legend');
       div.innerHTML += '<p class="title">Data As Of 08-01-19</p>';
-      div.innerHTML += '<i class="circle" style="background: #cccccc"></i><p> Cold Water Sites - Click for info</p>';
-      div.innerHTML += '<i style="background: #045a8d"></i><p>Supporting Drainage Basin</p>';
+      div.innerHTML += '<i class="circle"></i><p> Cold Water Sites - Click for info</p>';
+      div.innerHTML += '<i class="poly"></i><p>Supporting Drainage Basin</p>';
 
       // Return the Legend div containing the HTML content
       return div;
