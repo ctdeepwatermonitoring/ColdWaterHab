@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Load css -->
-    <link rel="stylesheet" type="text/css" href="index.css"> <!-- loads our index.css-->
+    <link rel="stylesheet" type="text/css" href="about_data.css"> <!-- loads our index.css-->
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -42,12 +42,50 @@
 </div>
 
 <div class="topnav">
-    <a href="index.html">map</a>
-    <a href="about.html">about</a>
+  <a href="index.html">map</a>
+  <a href="about.html">about</a>
+  <a href ="data.html">download data</a>
 </div>
 <!-- Begin map page content -->
-<div class="about">
-    <h2>About the project</h2>
+<div class="about_title">
+    <p>About the map</p>
+    <hr>
+</div>
+<div class ="about_text">
+<div class="row">
+            <div class="first-column">
+                <p>
+                    Several native aquatic species in Connecticut such as wild brook trout (<i>Salvelinus fontinalis</i>) and slimy sculpin (<i>Cottus cognatus</i>)
+                    are dependent on cold water habitat
+                    in Connecticut rivers and streams.  These species require specific temperatures for survival, growth and reproduction.
+                    Habitat for cold water species is under threat in the Connecticut due to stream flow and temperature modification caused by altered land use,
+                    fragmented populations from dams and culverts, climate change and introduction of exotic species (ADD REFS).  Depletion of cold water habitat
+                    could constrain populations to smaller and more fragmented waters resulting in population shifts and reductions of species.</p>
+                <p>
+                    We developed a map to help identify this critical habitat to inform decisions on land use management by stakeholders.
+                </p>
+                <b>Data analysis</b>
+                <p>
+                    The map above displays cold water habitat as the watershed upstream of sites identified with cold water.  Cold water sites were identified as streams with
+                    an average water temperature of less than 18.29 degree C from June through August (Beauchene et al 2014) or streams with a density of at least 10 cold-water
+                    fish individuals per 100-meter stream reach. Samples were collected by the CT DEEP Monitoring and Assessment Program and Inland Fisheries Program from 1988 - 2018.
+                    The map will be update periodically as new data is collected.
+                </p>
+
+                <b>References</b>
+
+                <p>Mike Beauchene, Mary Becker, Christopher J. Bellucci, Neal Hagstrom & Yoichiro Kanno (2014) Summer Thermal Thresholds
+                    of Fish Community Transitions in Connecticut Streams, North American Journal of Fisheries Management,
+                    34:1, 119-131, DOI: 10.1080/02755947.2013.855280</p>
+
+
+            </div>
+            <div class="column">
+                <img class="max-image-width" src="Images/brooktrout.jpg"
+                    title="Brook Trout" border = "5">
+                <div class="linkbox">Brook Trout.  CT DEEP Photo Credit.</div>
+            </div>
+        </div>
 </div>
 </body>
 </html>

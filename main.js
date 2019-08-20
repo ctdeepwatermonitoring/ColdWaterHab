@@ -65,7 +65,7 @@ $.getJSON("coldwatersites.geojson",function(data){
   var marker = L.geoJson(data, {
     pointToLayer: function(feature,latlng){
       var markerStyle = {
-        fillColor:'#cccccc',
+        fillColor:'#ff6d6d',
         radius: 5,
         color: "#000",
         weight: 1,
@@ -82,10 +82,23 @@ $.getJSON("coldwatersites.geojson",function(data){
       "<b>Continous Temperature Year Count: </b>"+feature.properties.TEMP
           +'</br>'+ "<b>Fish Sample Year Count: </b>"
           +feature.properties.FISH+'</br>'+
-      '<a href="https://github.com/marybecker/ColdWaterHab" </a> Link to Data',customOptions);
+      '<a href="data.html" </a> Link to Data',customOptions);
     }
     }).addTo(map);
   });
+
+  // load GeoJSON of CT Boundary
+  var linestyle = {
+      "color": "black",
+      "weight": 2,
+  };
+
+    $.getJSON("CT_state_boundary.geojson",function(linedata){
+        console.log(linedata);
+        L.geoJson(linedata,{
+            style:linestyle
+        }).addTo(map);
+    });
 
 //add legend
 var legend = L.control({position: 'topleft'});

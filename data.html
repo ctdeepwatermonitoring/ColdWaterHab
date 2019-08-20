@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CT Cold Water Streams</title>
+
+    <!-- Load leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js"
+            integrity="sha512-1tScwpjXwwnm6tTva0l0/ZgM3rYNbdyMj5q6RSQMbNX6EUMhYDE3pMRGZaT41zHEvLoWEK7qFEJmZDOoDMU7/Q=="
+            crossorigin=""></script>
+
+    <!-- Load jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Load css -->
+    <link rel="stylesheet" type="text/css" href="about_data.css"> <!-- loads our index.css-->
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+          <span id="cold_water_title_span" class="header_txt">
+              Cold Water Habitat
+          </span>
+    <span id="department_span" class="logo_txt">
+              CT Dept. of Energy and Environmental Protection
+          </span>
+    <span id="logo_span">
+              <a href="http://www.ct.gov/deep">
+                      <img id="deep" src="http://www.ct.gov/deep/lib/deep/gis/data/deeplogo.png">
+              </a>
+          </span>
+</div>
+
+<div class="topnav">
+  <a href="index.html">map</a>
+  <a href="about.html">about</a>
+  <a href ="data.html">download data</a>
+</div>
+<!-- Begin map page content -->
+<div class="about_title">
+    <p>Data</p>
+    <hr>
+</div>
+<div class ="about_text">
+  <p><b>Sample collection data:</b></br>
+    Sample Data collected and processed as of the map date: <a href="coldwatersamples_CompiledDataAsOf080119.csv">Sample Data (csv)</a>
+  </p>
+  <p><b>Maps for download:</b></br>
+    High res map for download: <a href="Images\coldwaterhab_map_8000px_080119.png">8000px Map (png)</a></br>
+    High res map for download: <a href="Images\coldwaterhab_map_1200px_080119.png">1200px Map (png)</a></br>
+  </p>
+  <p><b>Spatial Data:</b></br>
+    Cold water sites as of map date: <a href="coldwatersites.geojson">Site Data (geojson)</a></br>
+    Cold water supporting watershed as of map date: <a href="coldwatersites_us_drainage.geojson">Watershed Area (geojson)</a></br>
+  </p>
+  <p><b>Map Development Repository:</b></br>
+      <a href="https://github.com/marybecker/ColdWaterHab">https://github.com/marybecker/ColdWaterHab</a></br>
+  </div>
+</body>
+</html>
