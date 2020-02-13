@@ -79,7 +79,7 @@ $.getJSON("coldwatersites.geojson",function(data){
       marker.bindPopup('<b>Stream: </b>'+
           feature.properties.Station_Na+'</br>'
           +"<b>SID: </b>"+feature.properties.STA_SEQ+'</br>'+
-      "<b>Continous Temperature Year Count: </b>"+feature.properties.TEMP
+      "<b>Temperature Logger Year Count: </b>"+feature.properties.TEMP
           +'</br>'+ "<b>Fish Sample Year Count: </b>"
           +feature.properties.FISH+'</br>'+
       '<a href="data.html" </a> Link to Data',customOptions);
