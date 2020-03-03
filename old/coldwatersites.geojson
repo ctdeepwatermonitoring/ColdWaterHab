@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "coldwaterstreams2",
+"name": "coldwatersites",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "STA_SEQ": 14129, "Station_Na": "Beacon Hill Brook", "Proximity_": "at Andrasko Road", "YLat": 41.4684, "XLong": -73.0501, "FISH": 0, "TEMP": 3, "DrainID": 103015193 }, "geometry": { "type": "Point", "coordinates": [ -73.0501, 41.4684 ] } },
@@ -404,6 +404,7 @@
 { "type": "Feature", "properties": { "STA_SEQ": 16972, "Station_Na": "PITCH BROOK", "Proximity_": "300 M US Pitch Reservoir", "YLat": 41.7067, "XLong": -73.1619, "FISH": 2, "TEMP": 0, "DrainID": 103009642 }, "geometry": { "type": "Point", "coordinates": [ -73.1619, 41.7067 ] } },
 { "type": "Feature", "properties": { "STA_SEQ": 16979, "Station_Na": "POND MOUNTAIN BROOK", "Proximity_": "DS Pond Mountain Rd", "YLat": 41.7678, "XLong": -73.4805, "FISH": 1, "TEMP": 0, "DrainID": 103008222 }, "geometry": { "type": "Point", "coordinates": [ -73.4805, 41.7678 ] } },
 { "type": "Feature", "properties": { "STA_SEQ": 16981, "Station_Na": "POOTATUCK RIVER", "Proximity_": "In Game Club Property end of access rd.", "YLat": 41.3931, "XLong": -73.2683, "FISH": 1, "TEMP": 0, "DrainID": 103014870 }, "geometry": { "type": "Point", "coordinates": [ -73.2683, 41.3931 ] } },
+{ "type": "Feature", "properties": { "STA_SEQ": 16992, "Station_Na": "QUINNIPIAC RIVER", "Proximity_": "Adjacent to Route 70 below island", "YLat": 41.5283, "XLong": -72.8467, "FISH": 1, "TEMP": 0, "DrainID": 104000231 }, "geometry": { "type": "Point", "coordinates": [ -72.8467, 41.5283 ] } },
 { "type": "Feature", "properties": { "STA_SEQ": 16994, "Station_Na": "RACE BROOK", "Proximity_": "DS of Rte 15", "YLat": 41.3058, "XLong": -73.0139, "FISH": 2, "TEMP": 0, "DrainID": 104001706 }, "geometry": { "type": "Point", "coordinates": [ -73.0139, 41.3058 ] } },
 { "type": "Feature", "properties": { "STA_SEQ": 16996, "Station_Na": "RATLUM BROOK", "Proximity_": "DS of 2nd road crossing on Ratlum Bk Rd.", "YLat": 41.8928, "XLong": -72.9383, "FISH": 1, "TEMP": 0, "DrainID": 105000421 }, "geometry": { "type": "Point", "coordinates": [ -72.9383, 41.8928 ] } },
 { "type": "Feature", "properties": { "STA_SEQ": 17000, "Station_Na": "Red Brook", "Proximity_": "US of wells rd", "YLat": 41.3908, "XLong": -71.973, "FISH": 1, "TEMP": 0, "DrainID": 108001846 }, "geometry": { "type": "Point", "coordinates": [ -71.973, 41.3908 ] } },
