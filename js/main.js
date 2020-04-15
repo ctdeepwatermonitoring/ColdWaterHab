@@ -47,7 +47,7 @@ var polystyle = {
     "opacity": 0.8
 };
 
-$.getJSON("coldwatersites_us_drainage.geojson",function(polyData){
+$.getJSON("data/coldwatersites_us_drainage.geojson",function(polyData){
     console.log(polyData);
     L.geoJson(polyData,{
         style:polystyle
@@ -60,7 +60,7 @@ var customOptions =
         'className' : 'custom'
     };
 // load GeoJSON from an external file and display circle markers
-$.getJSON("coldwatersites.geojson",function(data){
+$.getJSON("data/coldwatersites.geojson",function(data){
   var marker = L.geoJson(data, {
     pointToLayer: function(feature,latlng){
       var markerStyle = {
@@ -81,7 +81,7 @@ $.getJSON("coldwatersites.geojson",function(data){
       "<b>Temperature Logger Year Count: </b>"+feature.properties.TEMP
           +'</br>'+ "<b>Fish Sample Year Count: </b>"
           +feature.properties.FISH+'</br>'+
-      '<a href="data.html" </a> Link to Data',customOptions);
+      '<a href="../data.html" </a> Link to Data',customOptions);
     }
     }).addTo(map);
   });
@@ -92,7 +92,7 @@ $.getJSON("coldwatersites.geojson",function(data){
       "weight": 2,
   };
 
-    $.getJSON("CT_state_boundary.geojson",function(linedata){
+    $.getJSON("data/CT_state_boundary.geojson",function(linedata){
         console.log(linedata);
         L.geoJson(linedata,{
             style:linestyle
