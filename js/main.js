@@ -81,7 +81,7 @@ $.getJSON("data/coldwatersites.geojson",function(data){
       "<b>Temperature Logger Year Count: </b>"+feature.properties.TEMP
           +'</br>'+ "<b>Fish Sample Year Count: </b>"
           +feature.properties.FISH+'</br>'+
-      '<a href="../data.html" </a> Link to Data',customOptions);
+      '<a href="data.html" </a> Link to Data',customOptions);
     }
     }).addTo(map);
   });
