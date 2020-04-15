@@ -12,7 +12,6 @@ var baseMaps = {
     "Topo": topo
   };
 
-
 // load a tile layer base map from USGS wms_server
 // var wms_server = "http://basemap.nationalmap.gov/arcgis/services/USGSHydroCached/MapServer/WMSServer?";
 // var wms_options = { layers: "0", format: "image/png", attribution: "USGS"}
@@ -108,7 +107,7 @@ var legend = L.control({position: 'topleft'});
 
       // Create Div Element and Populate it with HTML
       var div = L.DomUtil.create('div', 'legend');
-      div.innerHTML += '<p class="title">Data As Of 03-24-20</p>';
+      div.innerHTML += '<p class="title">Data As Of 04-15-20</p>';
       div.innerHTML += '<i class="circle"></i><p> Cold Water Sites - Click for info</p>';
       div.innerHTML += '<i class="poly"></i><p>Supporting Drainage Basin</p>';
 
