@@ -2,7 +2,7 @@
 
 **Mapping Application:** https://ctdeepwatermonitoring.github.io/ColdWaterHab/
 
-*leaflet 1.5.1 JQuery 3.2.1*
+*leaflet 1.5.1 JQuery 3.2.1 esri-leaflet 2.3.0*
 
 **Data Sources:** CT DEEP Water Quality Monitoring and Assessment and Inland Fisheries Programs
 
