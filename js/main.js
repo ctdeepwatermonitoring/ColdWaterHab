@@ -89,6 +89,7 @@ layerControl.addOverlay(subBasin,"Subregional Basin Layer")
 //add legend to map
 
 var legend = L.control({position: 'topleft'});
+
 // Function that runs when legend is added to map
 legend.onAdd = function (map) {
   // Create Div Element and Populate it with HTML
@@ -96,10 +97,55 @@ legend.onAdd = function (map) {
   div.innerHTML += '<p class="title">Data As Of 04-15-20</p>';
   div.innerHTML += '<i class="circle"></i><p> Cold Water Sites - Click for info</p>';
   div.innerHTML += '<i class="poly"></i><p>Supporting Drainage Basin</p>';
+  div.innerHTML += '</br><p class="title">Zoom to Lat/Long</p>'
+  div.innerHTML += 'Latitude:<br/><input type="text" name="lat" id="lat"/>'
+  div.innerHTML += '</br>Longitude:<br/><input type="text" name="long" id="long"/>'
+  div.innerHTML += '<br/><input type="button" onclick="zoomToLatLong()" value="zoomToLatLong"/>'
   // Return the Legend div containing the HTML content
   return div;
 };
 // Add Legend to Map
 legend.addTo(map);
+
+ // disable scroll and click functionality
+ var lat = L.DomUtil.get("lat") 
+ L.DomEvent.disableScrollPropagation(lat);
+ L.DomEvent.disableClickPropagation(lat);
+ var long = L.DomUtil.get("long") 
+ L.DomEvent.disableScrollPropagation(long);
+ L.DomEvent.disableClickPropagation(long);
+
+
+function zoomToLatLong() {
+    var lat = document.getElementById("lat").value;
+    var lng = document.getElementById("long").value;
+    console.log([lat,long]);
+  if (lat == "" || lng == ""){
+    map.setView([41.55, -72.65],9);
+  } else {
+    try{
+      map.flyTo(new L.LatLng(lat, lng),16);
+      if (typeof circle !== 'undefined'){
+        map.removeLayer(circle);
+        circle = L.circle([lat, lng], {
+          color: 'yellow',
+          fillColor: 'yellow',
+          fillOpacity: 0.5,
+          radius: 10
+      }).addTo(map)
+      } else {
+        circle = L.circle([lat, lng], {
+          color: 'yellow',
+          fillColor: 'yellow',
+          fillOpacity: 0.5,
+          radius: 10
+      })
+      circle.addTo(map);
+      } 
+    } catch (error){
+      map.setView([41.55, -72.65],9);
+    }
+  } 
+}
 
     
