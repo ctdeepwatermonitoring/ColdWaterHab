@@ -98,8 +98,8 @@ legend.onAdd = function (map) {
   div.innerHTML += '<i class="circle"></i><p> Cold Water Sites - Click for info</p>';
   div.innerHTML += '<i class="poly"></i><p>Supporting Drainage Basin</p>';
   div.innerHTML += '</br><p class="title">Zoom to Lat/Long</p>'
-  div.innerHTML += 'Latitude:<br/><input type="text" name="lat" id="lat"/>'
-  div.innerHTML += '</br>Longitude:<br/><input type="text" name="long" id="long"/>'
+  div.innerHTML += 'Enter Latitude (DD):<br/><input type="text" name="lat" id="lat" placeholder = "e.g. 41.55" />'
+  div.innerHTML += '</br>Enter Longitude (DD):<br/><input type="text" name="long" id="long" placeholder = "e.g. -72.65"/>'
   div.innerHTML += '<br/><input type="button" onclick="zoomToLatLong()" value="zoomToLatLong"/>'
   // Return the Legend div containing the HTML content
   return div;
