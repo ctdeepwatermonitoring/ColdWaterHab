@@ -94,7 +94,7 @@ var legend = L.control({position: 'topleft'});
 legend.onAdd = function (map) {
   // Create Div Element and Populate it with HTML
   var div = L.DomUtil.create('div', 'legend');
-  div.innerHTML += '<p class="title">Data As Of 04-15-20</p>';
+  div.innerHTML += '<p class="title">Data As Of 12-13-21</p>';
   div.innerHTML += '<i class="circle"></i><p> Cold Water Sites - Click for info</p>';
   div.innerHTML += '<i class="poly"></i><p>Supporting Drainage Basin</p>';
   div.innerHTML += '</br><p class="title">Zoom to Lat/Long</p>'
