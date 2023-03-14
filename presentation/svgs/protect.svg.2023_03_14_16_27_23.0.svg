@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="protect.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 254.00001 185.20833"
+   height="700"
+   width="960"
+   inkscape:export-filename="C:\Users\deepuser\Documents\Projects\ProgramDev\ColdWaterHab\presentation\images\emerging_research.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <rect
+       x="60.209094"
+       y="138.58863"
+       width="4.2845423"
+       height="51.960755"
+       id="rect2993" />
+    <rect
+       id="rect2142"
+       height="16.989991"
+       width="1.0961285"
+       y="153.73202"
+       x="137.29009" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect1250"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7233"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <rect
+       x="17.402217"
+       y="141.29561"
+       width="70.128337"
+       height="16.882748"
+       id="rect7157" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect6613"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect6424"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect6309"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect6172"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect6073"
+       effect="bspline" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5794"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5724"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#0d2d6c;stroke-width:1pt;stroke-opacity:1;fill:#0d2d6c;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5722" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5720"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5522"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5454"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4850"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5300"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5298" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5276"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5274" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5208"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5204"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5166"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5134"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4848"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4844"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <rect
+       x="147.26951"
+       y="105.71197"
+       width="27.7916"
+       height="19.739828"
+       id="rect4759" />
+    <rect
+       x="126.49074"
+       y="141.03588"
+       width="31.687619"
+       height="23.895581"
+       id="rect4753" />
+    <rect
+       x="70.90754"
+       y="152.72393"
+       width="38.180983"
+       height="19.739828"
+       id="rect4747" />
+    <rect
+       x="37.142045"
+       y="125.4518"
+       width="32.207088"
+       height="15.32434"
+       id="rect4741" />
+    <rect
+       x="33.505761"
+       y="91.946041"
+       width="26.752662"
+       height="17.142482"
+       id="rect4699" />
+    <rect
+       x="20.259297"
+       y="44.674348"
+       width="221.29386"
+       height="117.9195"
+       id="rect4641" />
+    <rect
+       id="rect17841"
+       height="39.066982"
+       width="169.21036"
+       y="6.9505674"
+       x="19.653328" />
+    <rect
+       id="rect17803"
+       height="23.967474"
+       width="201.56645"
+       y="7.1902421"
+       x="18.934304" />
+    <rect
+       id="rect916"
+       height="23.564384"
+       width="186.49525"
+       y="166.97049"
+       x="10.77229" />
+    <rect
+       id="rect910"
+       height="8.5280628"
+       width="4.4884543"
+       y="133.98036"
+       x="105.02983" />
+    <rect
+       id="rect904"
+       height="14.138631"
+       width="2.2442272"
+       y="119.6173"
+       x="78.772369" />
+    <rect
+       id="rect898"
+       height="58.349907"
+       width="248.21152"
+       y="120.29057"
+       x="8.3036404" />
+    <rect
+       id="rect891"
+       height="32.765717"
+       width="27.828417"
+       y="123.20807"
+       x="62.165089" />
+    <rect
+       id="rect885"
+       height="53.412605"
+       width="99.868103"
+       y="118.04634"
+       x="8.0792179" />
+    <rect
+       id="rect875"
+       height="53.637028"
+       width="190.98372"
+       y="127.69652"
+       x="9.2013311" />
+    <rect
+       id="rect868"
+       height="5.610703"
+       width="122.56267"
+       y="183.57764"
+       x="14.110758" />
+    <rect
+       x="14.110758"
+       y="183.57764"
+       width="122.56267"
+       height="5.610703"
+       id="rect868-9" />
+    <rect
+       x="14.110758"
+       y="183.57764"
+       width="122.56267"
+       height="5.610703"
+       id="rect2484" />
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <rect
+       x="14.110758"
+       y="183.57764"
+       width="122.56267"
+       height="5.610703"
+       id="rect868-0" />
+    <rect
+       x="14.110758"
+       y="183.57764"
+       width="122.56267"
+       height="5.610703"
+       id="rect18450" />
+    <rect
+       id="rect4699-6"
+       height="17.142483"
+       width="26.752663"
+       y="91.946037"
+       x="33.50576" />
+    <rect
+       id="rect4712"
+       height="17.142483"
+       width="26.752663"
+       y="91.946037"
+       x="33.50576" />
+    <rect
+       id="rect4699-3"
+       height="17.142483"
+       width="26.752663"
+       y="91.946037"
+       x="33.50576" />
+    <rect
+       id="rect7170"
+       height="17.142483"
+       width="26.752663"
+       y="91.946037"
+       x="33.50576" />
+    <rect
+       id="rect4747-2"
+       height="19.739828"
+       width="38.180984"
+       y="152.72392"
+       x="70.907539" />
+    <rect
+       id="rect7208"
+       height="19.739828"
+       width="38.180984"
+       y="152.72392"
+       x="70.907539" />
+    <rect
+       id="rect4699-2"
+       height="17.142483"
+       width="26.752663"
+       y="91.946037"
+       x="33.50576" />
+    <rect
+       id="rect7748"
+       height="17.142483"
+       width="26.752663"
+       y="91.946037"
+       x="33.50576" />
+    <rect
+       id="rect7157-1"
+       height="16.882748"
+       width="70.128334"
+       y="141.29561"
+       x="17.402218" />
+    <rect
+       id="rect7783"
+       height="16.882748"
+       width="70.128334"
+       y="141.29561"
+       x="17.402218" />
+    <rect
+       x="70.907539"
+       y="152.72392"
+       width="38.180984"
+       height="19.739828"
+       id="rect4747-2-0" />
+    <rect
+       x="70.907539"
+       y="152.72392"
+       width="38.180984"
+       height="19.739828"
+       id="rect1093" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5724-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5722-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#0d2d6c;fill-opacity:1;fill-rule:evenodd;stroke:#0d2d6c;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1">
+      <path
+         d="M 2.3985463,2.3985463 L 327.32162,2.3985463 L 327.32162,255.20533 L 2.3985463,255.20533 z"
+         id="path2050" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2">
+      <path
+         d="M 0.79951545,0.79951545 L 328.92065,0.79951545 L 328.92065,256.80436 L 0.79951545,256.80436 z"
+         id="path2053" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-1"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <rect
+       x="10.77229"
+       y="166.97049"
+       width="231.47238"
+       height="38.091785"
+       id="rect916-3" />
+    <rect
+       x="10.77229"
+       y="166.97049"
+       width="231.47238"
+       height="38.091785"
+       id="rect3930" />
+    <rect
+       id="rect916-3-7"
+       height="38.091785"
+       width="231.47238"
+       y="166.97049"
+       x="10.77229" />
+    <rect
+       id="rect4006"
+       height="38.091785"
+       width="231.47238"
+       y="166.97049"
+       x="10.77229" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-2">
+      <path
+         d="M 0,0 L 377.21139,0 L 377.21139,282.70866 L 0,282.70866 z"
+         id="path4030" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-2"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-1">
+      <path
+         d="M 0,0 L 450.6069,0 L 450.6069,329.72017 L 0,329.72017 z"
+         id="path4056" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2-3">
+      <path
+         d="M 5.1168988,339.31435 L 450.6069,339.31435 L 450.6069,628.89885 L 5.1168988,628.89885 z"
+         id="path4059" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath3">
+      <path
+         d="M 472.35373,0 L 911.92732,0 L 911.92732,329.72017 L 472.35373,329.72017 z"
+         id="path4062" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath4">
+      <path
+         d="M 472.35373,339.31435 L 911.92732,339.31435 L 911.92732,625.06118 L 472.35373,625.06118 z"
+         id="path4065" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-24"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       id="clipEmfPath1-1-8"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4056-3"
+         d="M 0,0 H 450.6069 V 329.72017 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipEmfPath3-4"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4062-8"
+         d="M 472.35373,0 H 911.92732 V 329.72017 H 472.35373 Z" />
+    </clipPath>
+    <clipPath
+       id="clipEmfPath4-2"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4065-8"
+         d="M 472.35373,339.31435 H 911.92732 V 625.06118 H 472.35373 Z" />
+    </clipPath>
+    <clipPath
+       id="clipEmfPath2-3-7"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4059-4"
+         d="M 5.1168988,339.31435 H 450.6069 v 289.5845 H 5.1168988 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-0">
+      <path
+         d="M 0,0 L 787.043,0 L 787.043,599.31678 L 0,599.31678 z"
+         id="path4201" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-4"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <rect
+       id="rect916-3-7-6"
+       height="38.091785"
+       width="231.47238"
+       y="166.97049"
+       x="10.77229" />
+    <rect
+       id="rect4989"
+       height="38.091785"
+       width="231.47238"
+       y="166.97049"
+       x="10.77229" />
+    <rect
+       id="rect916-3-7-1"
+       height="33.43324"
+       width="119.11921"
+       y="166.97049"
+       x="10.77229" />
+    <rect
+       id="rect4989-3"
+       height="38.091785"
+       width="231.47238"
+       y="166.97049"
+       x="10.77229" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-9">
+      <path
+         d="M 1.2792247,1.1193216 L 902.17323,1.1193216 L 902.17323,654.64325 L 1.2792247,654.64325 z"
+         id="path6558" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-0"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-01">
+      <path
+         d="M 530.39855,0 L 847.16657,0 L 847.16657,174.93398 L 530.39855,174.93398 z"
+         id="path7843" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2-5">
+      <path
+         d="M 66.999394,2.5584494 L 381.52877,2.5584494 L 381.52877,174.93398 L 66.999394,174.93398 z"
+         id="path7846" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath3-8">
+      <path
+         d="M 0,202.43731 L 894.17807,202.43731 L 894.17807,428.70018 L 0,428.70018 z"
+         id="path7849" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-6"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-07">
+      <path
+         d="M 530.39855,0 L 847.16657,0 L 847.16657,174.93398 L 530.39855,174.93398 z"
+         id="path7899" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2-2">
+      <path
+         d="M 66.999394,2.5584494 L 381.52877,2.5584494 L 381.52877,174.93398 L 66.999394,174.93398 z"
+         id="path7902" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath3-1">
+      <path
+         d="M 0,202.43731 L 894.17807,202.43731 L 894.17807,428.70018 L 0,428.70018 z"
+         id="path7905" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-01"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-8">
+      <path
+         d="M 62.522108,3.1980618 L 377.05148,3.1980618 L 377.05148,177.33253 L 62.522108,177.33253 z"
+         id="path7933" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2-1">
+      <path
+         d="M 525.92126,0 L 842.68928,0 L 842.68928,178.61175 L 525.92126,178.61175 z"
+         id="path7936" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath3-5">
+      <path
+         d="M 0,212.3513 L 890.5003,212.3513 L 890.5003,444.37068 L 0,444.37068 z"
+         id="path7939" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-07"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-4">
+      <path
+         d="M 525.92126,0 L 842.68928,0 L 842.68928,175.09388 L 525.92126,175.09388 z"
+         id="path7967" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2-17">
+      <path
+         d="M 62.522108,4.6371896 L 377.05148,4.6371896 L 377.05148,175.09388 L 62.522108,175.09388 z"
+         id="path7970" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath3-88">
+      <path
+         d="M 0,207.2344 L 887.78195,207.2344 L 887.78195,430.77892 L 0,430.77892 z"
+         id="path7973" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-8"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-87">
+      <path
+         d="M 0,202.75712 L 861.23804,202.75712 L 861.23804,427.58086 L 0,427.58086 z"
+         id="path8001" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2-8">
+      <path
+         d="M 66.359782,0 L 377.05148,0 L 377.05148,172.21563 L 66.359782,172.21563 z"
+         id="path8004" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath3-7">
+      <path
+         d="M 533.43671,2.8782556 L 821.26227,2.8782556 L 821.26227,172.21563 L 533.43671,172.21563 z"
+         id="path8007" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-21"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-41">
+      <path
+         d="M 0,0 L 436.53543,0 L 436.53543,338.51484 L 0,338.51484 z"
+         id="path8039" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath2-4">
+      <path
+         d="M 447.88855,0 L 902.33313,0 L 902.33313,338.51484 L 447.88855,338.51484 z"
+         id="path8042" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-3"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <rect
+       id="rect916-3-7-0"
+       height="56.177905"
+       width="247.09221"
+       y="166.97049"
+       x="10.77229" />
+    <rect
+       id="rect8074"
+       height="38.091785"
+       width="231.47238"
+       y="166.97049"
+       x="10.77229" />
+    <clipPath
+       id="clipEmfPath1-5"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path1031"
+         d="M 0,197.32041 L 356.90369,197.32041 L 356.90369,407.43307 L 0,407.43307 z" />
+    </clipPath>
+    <clipPath
+       id="clipEmfPath2-47"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path1034"
+         d="M 0,0 L 356.90369,0 L 356.90369,197.32041 L 0,197.32041 z" />
+    </clipPath>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-48" />
+    <clipPath
+       id="clipEmfPath1-7"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path1057"
+         d="M 0,0 L 343.47184,0 L 343.47184,618.34525 L 0,618.34525 z" />
+    </clipPath>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-7" />
+    <rect
+       x="10.77229"
+       y="166.97049"
+       width="247.09221"
+       height="56.177906"
+       id="rect916-3-7-0-0" />
+    <rect
+       x="10.77229"
+       y="166.97049"
+       width="247.09221"
+       height="56.177906"
+       id="rect1855" />
+    <rect
+       id="rect916-3-7-0-0-4"
+       height="121.12254"
+       width="225.44399"
+       y="166.97049"
+       x="10.77229" />
+    <rect
+       id="rect1911"
+       height="56.177906"
+       width="247.09221"
+       y="166.97049"
+       x="10.77229" />
+    <clipPath
+       id="clipEmfPath1-10"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path1981"
+         d="M 0,0 L 959.41853,0 L 959.41853,719.5639 L 0,719.5639 z" />
+    </clipPath>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-73" />
+    <clipPath
+       id="clipEmfPath1-80"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path2048"
+         d="M 0,0 L 959.41853,0 L 959.41853,468.67595 L 0,468.67595 z" />
+    </clipPath>
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-82" />
+  </defs>
+  <sodipodi:namedview
+     showguides="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-maximized="1"
+     inkscape:window-y="223"
+     inkscape:window-x="1592"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     showborder="true"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer4"
+     inkscape:document-units="mm"
+     inkscape:cy="349.93496"
+     inkscape:cx="492.41163"
+     inkscape:zoom="1.173307"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     inkscape:label="img"
+     id="layer1"
+     inkscape:groupmode="layer" />
+  <g
+     style="display:inline"
+     inkscape:label="text"
+     id="layer4"
+     inkscape:groupmode="layer">
+    <text
+       style="font-size:9.87778px;line-height:1.25;font-family:'Public Sans';-inkscape-font-specification:'Public Sans';text-align:center;white-space:pre;shape-inside:url(#rect17841);"
+       id="text17839"
+       xml:space="preserve" />
+    <text
+       inkscape:transform-center-y="0.27403213"
+       inkscape:transform-center-x="6.8508032"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;line-height:125%;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, @wght=700';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 700;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#0d0080;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
+       x="128.74498"
+       y="14.934852"
+       id="text17860"><tspan
+         y="14.934852"
+         x="128.74498"
+         id="tspan7839"
+         sodipodi:role="line">Protecting Cold Water Habitat</tspan><tspan
+         y="30.809851"
+         x="128.74498"
+         id="tspan7841"
+         sodipodi:role="line" /></text>
+    <text
+       style="font-size:4.23333px;line-height:1.25;font-family:'Public Sans';-inkscape-font-specification:'Public Sans';text-align:center;white-space:pre;shape-inside:url(#rect2142)"
+       id="text2140"
+       xml:space="preserve" />
+    <text
+       transform="translate(5.1717442,-30.558792)"
+       y="0"
+       x="-63.586811"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:0;font-family:'Public Sans';-inkscape-font-specification:'Public Sans, @wght=600';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 600;text-align:start;text-anchor:start;white-space:pre;display:inline;fill:#00aae7;fill-opacity:1;shape-inside:url(#rect916-3-7-0-0-4)"
+       id="text914-4-6"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan2973"
+         style="line-height:0.1">Look for opportunities to restore aquatic connectivity by removing small dams  and replacing undersized culverts;Plant native trees in</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3000"> riparian zones to provide shaded waters and stream bank stabilization;Reduce water use and improve flows to streams;Look for opportunities to protect land draining to streams</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text2991"
+       style="line-height:1.25;font-family:'Public Sans';font-size:4.23333333px;text-anchor:middle;text-align:center;-inkscape-font-specification:'Public Sans';white-space:pre;shape-inside:url(#rect2993)"><tspan
+         sodipodi:role="line"
+         id="tspan2995"></tspan></text>
+  </g>
+</svg>
