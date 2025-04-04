@@ -34,7 +34,7 @@ layerControl = L.control.layers(baseMaps,null).addTo(map);  //add layer control
 var polystyle = {"color": "#045a8d","weight": 2,"opacity": 0.8}; //Style for drainage
 var customOptions = {'maxWidth': '500','className' : 'custom'}; //Set Custom Options for the popUP
 
-$.getJSON("data/coldwatersites_us_drainage.geojson",function(polyData){
+$.getJSON("https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Cold_Water_Sites_Set/FeatureServer/1/query?outFields=*&where=1%3D1&f=geojson",function(polyData){
     console.log(polyData);
     L.geoJson(polyData,{
         style:polystyle
@@ -42,7 +42,7 @@ $.getJSON("data/coldwatersites_us_drainage.geojson",function(polyData){
 });
 
 // load GeoJSON from an external file and display circle markers
-$.getJSON("data/coldwatersites.geojson",function(data){
+$.getJSON("https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Cold_Water_Sites_Set/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson",function(data){
   var marker = L.geoJson(data, {
     pointToLayer: function(feature,latlng){
       var markerStyle = {
