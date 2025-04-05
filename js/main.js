@@ -23,6 +23,12 @@ layerControl = L.control.layers(baseMaps,null).addTo(map);  //add layer control
 //Set styles for cold water data and load data into the map
 var polystyle = {"color": "#00AAE7","weight": 2,"opacity": 0.9}; //Style for drainage
 var customOptions = {'maxWidth': '500','className' : 'custom'}; //Set Custom Options for the popUP
+var fdate = d3.timeFormat("%m-%d-%Y")
+
+
+$.getJSON("https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Cold_Water_Sites_Set/FeatureServer/0?f=pjson",function(metaData){
+  console.log(fdate(metaData.editingInfo.dataLastEditDate));
+
 
 $.getJSON("https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Cold_Water_Sites_Set/FeatureServer/1/query?outFields=*&where=1%3D1&f=geojson",function(polyData){
     console.log(polyData);
@@ -93,7 +99,7 @@ legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'legend');
   div.innerHTML += '<i class="circle"></i><p> Cold Water Sites - Click for info</p>';
   div.innerHTML += '<i class="poly"></i><p>Supporting Drainage Basin</p>';
-  div.innerHTML += '<p class="dataupdate">Data Last Updated 12-13-21</p>';
+  div.innerHTML += '<p class="dataupdate">Data Last Updated ' + fdate(metaData.editingInfo.dataLastEditDate) + '</p>';
   div.innerHTML += '</br><p class="title">Zoom to Lat/Long</p>'
   div.innerHTML += 'Enter Latitude (Decimal Degrees):<br/><input type="text" name="lat" id="lat" placeholder = "e.g. 41.55" />'
   div.innerHTML += '</br>Enter Longitude (Decimal Degrees):<br/><input type="text" name="long" id="long" placeholder = "e.g. -72.65"/>'
@@ -145,4 +151,5 @@ function zoomToLatLong() {
   } 
 }
 
+});
     
