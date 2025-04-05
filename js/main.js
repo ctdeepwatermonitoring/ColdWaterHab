@@ -1,28 +1,18 @@
 // initialize the map and add slippy maps and layer control options
+var hydro =     L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSHydroCached/MapServer/tile/{z}/{y}/{x}', 
+                  {attribution: 'USGS The National Map: National Hydrography Dataset'});
+    topo =      L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}',
+                  {attribution: 'USGS The National Map: National Hydrography Dataset'});
+    esriTopo =  L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', 
+                  {maxZoom: 18,
+                  attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'});
 
-  //Load a tile layer base map from USGS ESRI tile server https://viewer.nationalmap.gov/help/HowTo.htm
-var hydro = L.esri.tiledMapLayer({url: "https://basemap.nationalmap.gov/arcgis/rest/services/USGSHydroCached/MapServer"}),
-    topo = L.esri.tiledMapLayer({url: "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer"});
-    esriTopo = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-          maxZoom: 18,
-          attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
-      });
+var baseMaps = {"NHD": hydro, "USGS Topo": topo, "ESRI World Topo":esriTopo};
+var map = L.map('map', {zoomControl: false, attributionControl: false, layers:[hydro]});
 
-var baseMaps = {
-    "NHD": hydro,
-    "USGS Topo": topo,
-    "ESRI World Topo":esriTopo
-  };
-
-var map = L.map('map', {
-    zoomControl: false,
-    attributionControl: false,
-    layers:[hydro]
-});
-
-var lat= 41.55;
-var lng= -72.65;
-var zoom= 9;
+var lat  = 41.55;
+var lng  = -72.65;
+var zoom = 9;
 map.setView([lat, lng], zoom);
 map.createPane('top');
 map.getPane('top').style.zIndex=650;
@@ -31,7 +21,7 @@ L.control.zoom({position:'topright'}).addTo(map);
 layerControl = L.control.layers(baseMaps,null).addTo(map);  //add layer control
 
 //Set styles for cold water data and load data into the map
-var polystyle = {"color": "#045a8d","weight": 2,"opacity": 0.8}; //Style for drainage
+var polystyle = {"color": "#00AAE7","weight": 2,"opacity": 0.9}; //Style for drainage
 var customOptions = {'maxWidth': '500','className' : 'custom'}; //Set Custom Options for the popUP
 
 $.getJSON("https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Cold_Water_Sites_Set/FeatureServer/1/query?outFields=*&where=1%3D1&f=geojson",function(polyData){
@@ -46,13 +36,20 @@ $.getJSON("https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Co
   var marker = L.geoJson(data, {
     pointToLayer: function(feature,latlng){
       var markerStyle = {
-        fillColor:'#ff6d6d',
+        fillColor:'#FDB515',
         radius: 5,
-        color: "#000",
-        weight: 1,
+        color: "#0D2D6C",
+        weight: 2,
         opacity: 1,
-        fillOpacity: 0.9,
+        fillOpacity: 0.7,
         pane: 'top'
+        // fillColor:'#ff6d6d',
+        // radius: 5,
+        // color: "#000",
+        // weight: 1,
+        // opacity: 1,
+        // fillOpacity: 0.9,
+        // pane: 'top'
       };
       return L.circleMarker(latlng, markerStyle);
     },
@@ -94,9 +91,9 @@ var legend = L.control({position: 'topleft'});
 legend.onAdd = function (map) {
   // Create Div Element and Populate it with HTML
   var div = L.DomUtil.create('div', 'legend');
-  div.innerHTML += '<p class="title">Data As Of 12-13-21</p>';
   div.innerHTML += '<i class="circle"></i><p> Cold Water Sites - Click for info</p>';
   div.innerHTML += '<i class="poly"></i><p>Supporting Drainage Basin</p>';
+  div.innerHTML += '<p class="dataupdate">Data Last Updated 12-13-21</p>';
   div.innerHTML += '</br><p class="title">Zoom to Lat/Long</p>'
   div.innerHTML += 'Enter Latitude (Decimal Degrees):<br/><input type="text" name="lat" id="lat" placeholder = "e.g. 41.55" />'
   div.innerHTML += '</br>Enter Longitude (Decimal Degrees):<br/><input type="text" name="long" id="long" placeholder = "e.g. -72.65"/>'

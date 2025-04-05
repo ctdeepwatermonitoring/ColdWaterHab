@@ -3,52 +3,50 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>CT Cold Water Streams</title>
-    <!-- Load css -->
-    <link rel="stylesheet" type="text/css" href="style/about_data.css"> <!-- loads our index.css-->
-    <!-- Load icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="header">
-          <span id="cold_water_title_span" class="header_txt">
-              Cold Water Habitat
-          </span>
-    <span id="department_span" class="logo_txt">
-              CT Dept. of Energy and Environmental Protection
-          </span>
-    <span id="logo_span">
-              <a href="http://www.ct.gov/deep">
-                      <img id="deep" src="https://portal.ct.gov/-/media/DEEP/about/DEEP-Circle-Logo.png">
-              </a>
-          </span>
-</div>
+    <link rel="icon" type="image/x-icon" href="https://portal.ct.gov/-/media/DEEP/about/DEEP-Circle-Logo.png">
 
-<div class="topnav">
-  <a href="index.html">map</a>
-    <a target= "_blank" href="https://portal.ct.gov/DEEP/Water/Inland-Water-Monitoring/Cold-Water-Stream-Habitat-Map">about</a>
-  <a href ="data.html">download data</a>
-</div>
-<!-- Begin map page content -->
-<div class="about_title">
-    <p>Data</p>
-    <hr>
-</div>
-<div class ="about_text">
-  <p><b>Sample collection data:</b></br>
-    Sample Data collected and processed as of the map date: <a href="data/ColdWaterSamples_AsOf041519.csv">Sample Data (csv)</a>
-  </p>
-  <p><b>Maps for download:</b></br>
-    High res map for download: <a href="Images/coldwaterhab_map_8000px_041520.png">8000px Map (png)</a></br>
-    Low res map for download: <a href="Images/coldwaterhab_map_1200px_041520.png">1200px Map (png)</a></br>
-  </p>
-  <p><b>Spatial Data:</b></br>
-    Cold water sites as of map date: <a href="data/coldwatersites.geojson">Site Data (geojson)</a> or <a href="https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/datasets/cold-water-habitat-sites">(shapefile)</a></br>
-    Cold water supporting watershed as of map date: <a href="data/coldwatersites_us_drainage.geojson">Watershed Area (geojson)</a> or <a href="https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/datasets/cold-water-supporting-drainage-basin">(shapefile)</a></br>
-  </p>
-  <p><b>Map Development Repository:</b></br>
-      <a href="https://github.com/marybecker/ColdWaterHab">https://github.com/marybecker/ColdWaterHab</a></br>
-  </p>
+    <!-- Load css -->
+    <link rel="stylesheet" type="text/css" href="style/index.css"> 
+
+    <!-- Load google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="header">
+      <span id="cold_water_title_span" class="header_txt">
+          Cold Water Habitat
+      </span>
+      <span id="logo_span">
+          <a href="https://portal.ct.gov/DEEP/" target="_blank">
+              <img src="https://portal.ct.gov/-/media/DEEP/about/DEEP-Circle-Logo.png" 
+              style="width: 9vh;">
+          </a>
+      </span>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Map</a>
+        <a target= "_blank" href="https://portal.ct.gov/DEEP/Water/Inland-Water-Monitoring/Cold-Water-Stream-Habitat-Map">About</a>
+        <a href ="data.html">Download Data</a>
+    </div>
+
+  <div class="about_title">
+      <p>Data</p>
+      <hr>
   </div>
-</body>
+  <div class ="about_text">
+    <p><b>Sample collection data:</b></br>
+      Sample Data collected and processed as of the map date: <a href="data/coldwatersamples_040425.csv">Sample Data (csv)</a>
+    </p>
+    <p><b>Spatial Data:</b></br>
+      Cold water sites as of map date: <a href="https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Cold_Water_Sites_Set/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson" target="_blank">Site Data (geojson)</a> or <a href="https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/datasets/cold-water-habitat-sites" target="_blank">(shapefile)</a></br>
+      Cold water supporting watershed as of map date: <a href="https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Cold_Water_Sites_Set/FeatureServer/1/query?outFields=*&where=1%3D1&f=geojson" target="_blank">Watershed Area (geojson)</a> or <a href="https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/datasets/cold-water-supporting-drainage-basin" target="_blank">(shapefile)</a></br>
+    </p>
+    <p><b>Map Development Repository:</b></br>
+        <a href="https://github.com/marybecker/ColdWaterHab" target="_blank">https://github.com/marybecker/ColdWaterHab</a></br>
+    </p>
+  </div>
+  </body>
 </html>

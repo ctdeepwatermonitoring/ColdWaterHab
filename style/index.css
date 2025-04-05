@@ -1,17 +1,16 @@
 html, body {
   height: 100%;
-  background-color: white;
-}
-
-body {
-    margin: 0;
-    background-color: white;
-    overflow: hidden;
+  background-color: #ffffff;
+  margin: 0;
+  color:#ffffff;
+  overflow: hidden;
+  font-family: 'Public Sans', sans-serif;
 }
 
 #map {
-    height: 90%;
+    height: 87%;
     width: 100vw;
+    background-color: #ffffff;  
 }
 
 .about {
@@ -22,16 +21,22 @@ body {
 .about_title {
   left: 2vw;
   font-size:2vw;
-  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-family: 'Public Sans', sans-serif;
   padding: 0px 0px 0px 30px;
 }
 
 .about_text {
   left: 2vw;
   font-size:1.25vw;
-  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-family: 'Public Sans', sans-serif;
   padding: 0px 20px 20px 30px;
 }
+
+a {
+    color: #00AAE7;
+  }
 
 /* Use float property to make two-column layout */
 .first-column {
@@ -50,13 +55,6 @@ body {
     clear: both;
 }
 
-@media screen and (max-width: 800px) {
-     .first-column,
-     .column {
-         width: 100%;
-     }
- }
-
 
 /* Style the header with a grey background and some padding */
  .header {
@@ -67,15 +65,16 @@ body {
 }
 
  .header_txt {
-     color:white;
+     color:#00AAE7;
      font-size:2vw;
-     font-family: 'Lato', sans-serif;
+     font-weight: 700 ;
+     font-family: 'Public Sans', sans-serif;
  }
 
 .logo_txt {
     color:white;
     font-size:1.5vw;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Public Sans', sans-serif;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -88,6 +87,7 @@ body {
 #department_span {
     position: fixed;
     right: 5vw;
+    padding: 5px;
 }
 
 #logo_span{
@@ -109,14 +109,14 @@ body {
     text-align: center;
     padding: 0.5vw 1vw 0.5vw 2vw;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Public Sans', sans-serif;
     font-size: 1.25vw;
 }
 
 /* Change color on hover */
 .topnav a:hover{
-    background-color: white;
-    color: black;
+    /* background-color: #f6931f; */
+    color: #00AAE7;
 }
 
 
@@ -129,19 +129,18 @@ body {
 /* css to customize Leaflet default styles  */
 .custom .leaflet-popup-tip,
 .custom .leaflet-popup-content-wrapper {
-    background: #e93434;
-    color: #ffffff;
+    background: #9ECF7C;
+    color: #0D2D6C;
     font-size: 1vw;
 }
 
 .legend {
     line-height: 18px;
-    color: #333333;
-    font-family: 'Lato', sans-serif;
+    color: #0D2D6C;
+    font-family: 'Public Sans', sans-serif;
     padding: 1% 10%;
-    background: white;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background: #9ECF7C;
+    box-shadow: 0 0 15px #0D2D6C;
     border-radius: 5px;
     width: 18vw;
     z-index: 1000;
@@ -163,15 +162,39 @@ body {
 
 .legend .circle {
     border-radius: 50%;
-    background: #ff6d6d;
+    background: #f6931f;
 }
 
 .legend .poly {
-  background:#045a8d;
+  background:#00AAE7;
 }
+
+.legend .dataupdate {
+    font-size: 0.9vw;
+    font-weight: 400;
+    font-style: italic;
+  }
 
 .legend .title{
     font-size: 1vw;
     font-weight: bold;
     font-style: italic;
 }
+
+@media only screen and (max-width: 800px){
+    .first-column,
+    .column {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    .first-column,
+    .column {
+        width: 100%;
+    }
+  }
+
+  
+  
+  

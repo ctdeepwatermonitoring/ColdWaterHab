@@ -2,9 +2,11 @@
 
 **Mapping Application:** https://ctdeepwatermonitoring.github.io/ColdWaterHab/
 
+**Presentation:** https://ctdeepwatermonitoring.github.io/ColdWaterHab/presentation/coldwaterhab.html
+
 *leaflet 1.5.1 JQuery 3.2.1 esri-leaflet 2.3.0*
 
-**Data Sources:** CT DEEP Water Quality Monitoring and Assessment and Inland Fisheries Programs
+**Data Sources:** CT DEEP Water Quality Monitoring and Assessment, Inland Fisheries and Volunteer Temperature Programs
 
 **Data Processing:**  *QGIS 3.4.10-Madeira on Ubuntu 18.04 and R version 3.6.2*
 
