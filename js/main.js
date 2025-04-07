@@ -118,38 +118,37 @@ legend.addTo(map);
  L.DomEvent.disableScrollPropagation(long);
  L.DomEvent.disableClickPropagation(long);
 
+});
 
 function zoomToLatLong() {
-    var lat = document.getElementById("lat").value;
-    var lng = document.getElementById("long").value;
-    console.log([lat,long]);
-  if (lat == "" || lng == ""){
+  var lat = document.getElementById("lat").value;
+  var lng = document.getElementById("long").value;
+  console.log([lat,long]);
+if (lat == "" || lng == ""){
+  map.setView([41.55, -72.65],9);
+} else {
+  try{
+    map.flyTo(new L.LatLng(lat, lng),16);
+    if (typeof circle !== 'undefined'){
+      map.removeLayer(circle);
+      circle = L.circle([lat, lng], {
+        color: 'yellow',
+        fillColor: 'yellow',
+        fillOpacity: 0.5,
+        radius: 10
+    }).addTo(map)
+    } else {
+      circle = L.circle([lat, lng], {
+        color: 'yellow',
+        fillColor: 'yellow',
+        fillOpacity: 0.5,
+        radius: 10
+    })
+    circle.addTo(map);
+    } 
+  } catch (error){
     map.setView([41.55, -72.65],9);
-  } else {
-    try{
-      map.flyTo(new L.LatLng(lat, lng),16);
-      if (typeof circle !== 'undefined'){
-        map.removeLayer(circle);
-        circle = L.circle([lat, lng], {
-          color: 'yellow',
-          fillColor: 'yellow',
-          fillOpacity: 0.5,
-          radius: 10
-      }).addTo(map)
-      } else {
-        circle = L.circle([lat, lng], {
-          color: 'yellow',
-          fillColor: 'yellow',
-          fillOpacity: 0.5,
-          radius: 10
-      })
-      circle.addTo(map);
-      } 
-    } catch (error){
-      map.setView([41.55, -72.65],9);
-    }
-  } 
+  }
+} 
 }
-
-});
     
